@@ -15,6 +15,15 @@ const choixBoccacio = [
 	"Linguine Carbonara",
 	"Spaghetti Bolognaise",
 ];
+const choixKingMarcel = [
+	"Marcel Cerdan",
+	"Marcel Michelin",
+	"Marcel Duchamp",
+	"Marcel Jackson",
+	"Marcel du marché",
+	"Le Marcel",
+	"Burger du jour",
+];
 
 const getRandomNumber = (max) => {
 	return Math.floor(Math.random() * Math.floor(max));
@@ -25,5 +34,11 @@ let resultat;
 boccacio.addEventListener("click", () => {
 	i = getRandomNumber(choixBoccacio.length);
 	resultat = choixBoccacio[i];
+	result.innerHTML = resultat;
+});
+
+kingMarcel.addEventListener("click", () => {
+	i = getRandomNumber(choixKingMarcel.length);
+	resultat = choixKingMarcel[i];
 	result.innerHTML = resultat;
 });
